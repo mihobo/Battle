@@ -10,10 +10,19 @@ body  {
   </style>
 </head>
     <body>
-
-      <%= @player1_name %> attacked <%= @player2_name %>
-      <br></br>
-       <%= @player2_name %> now has: <%= @p2_health %>/100HP
+      <% if @p2_attack %>
+        <div>
+          <%= @player1_name %> attacked <%= @player2_name %>
+          <br></br>
+           <%= @player2_name %> now has: <%= @p2_health %>/100HP
+        </div>
+      <% else %>
+        <div>
+          <%= @player2_name %> attacked <%= @player1_name %>
+          <br></br>
+           <%= @player1_name %> now has: <%= @p1_health %>/100HP
+        </div>
+      <% end %>
 
        <form action="/play">
          <input type="submit" value="Keep playing">
