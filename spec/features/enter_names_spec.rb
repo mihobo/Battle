@@ -1,4 +1,4 @@
-#spec/features/enter_names_spec.rb
+# spec/features/enter_names_spec.rb
 
 feature 'adding names to the game' do
   scenario 'submit names' do

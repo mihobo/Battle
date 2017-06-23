@@ -1,4 +1,4 @@
-#spec/features/hit_points_spec.rb
+# spec/features/hit_points_spec.rb
 
 feature 'Viewing hit points' do
   scenario 'see player 2 hit points' do

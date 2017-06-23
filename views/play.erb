@@ -15,16 +15,29 @@ body  {
         <br></br>
         <%= @player1_name %> <%= @p1_health %>/100HP
         <br></br>
-        <form action="/attack2">
-          <input type="submit" value="Attack <%= @player2_name %> ">
-        </form>
-        <br></br>
-        <br></br>
-        <%= @player2_name %> <%= @p2_health %>/100HP
-        <br></br>
-        <form action="/attack1">
-          <input type="submit" value="Attack <%= @player1_name %>">
-        </form>
+        <% unless @game_over %>
+            <form action="/attack2">
+              <input type="submit" value="Attack <%= @player2_name %> ">
+            </form>
+            <br></br>
+            <br></br>
+            <%= @player2_name %> <%= @p2_health %>/100HP
+            <br></br>
+            <form action="/attack1">
+              <input type="submit" value="Attack <%= @player1_name %>">
+            </form>
+        <% else %>
+            <form action="/gameover">
+              <input type="submit" value="Attack <%= @player2_name %> ">
+            </form>
+            <br></br>
+            <br></br>
+            <%= @player2_name %> <%= @p2_health %>/100HP
+            <br></br>
+            <form action="/gameover">
+              <input type="submit" value="Attack <%= @player1_name %>">
+            </form>
+        <% end %>
 
     </body>
   </html>
