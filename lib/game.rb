@@ -7,8 +7,7 @@ class Game
     @player2 = player2
   end
 
-  def attack(player)
-    player.reduce_hp
-  end
-
+  # def attack(player)
+  #   player.reduce_hp
+  # end
 end

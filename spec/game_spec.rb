@@ -17,11 +17,4 @@ describe Game do
       expect(game.player2).to eq player2
     end
   end
-
-  describe "attack" do
-    it "attacks another player" do
-      expect(player2).to receive(:reduce_hp)
-      game.attack(player2)
-    end
-  end
 end

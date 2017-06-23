@@ -11,14 +11,20 @@ body  {
 </head>
     <body>
 
-      <%= @player1 %>
+      <%= @player1_name %>
+      <br></br>
+      <%= @player1_name %> <%= @p1_health %>/100HP
        vs.
-        <%= @player2 %>
+        <%= @player2_name %>
         <br></br>
-        <%= @player2 %> <%= @p2_health %>/100HP
+        <%= @player2_name %> <%= @p2_health %>/100HP
 
-      <form action="/attack">
-        <input type="submit" value="Attack">
+      <form action="/attack2">
+        <input type="submit" value="Attack P2">
+      </form>
+
+      <form action="/attack1">
+        <input type="submit" value="Attack P1">
       </form>
 
     </body>
