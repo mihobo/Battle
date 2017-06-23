@@ -22,28 +22,14 @@ class Battle < Sinatra::Base
   end
 
   get '/play' do
-    # @game = Game.instance
-    # @player1_name = $game.player1.player_name
-    # @player2_name = $game.player2.player_name
-    # @p1_health = $game.player1.health
-    # @p2_health = $game.player2.health
-    # @game_over = $game.game_over?
     erb(:play)
   end
 
   get '/attack1' do
-    # @player1_name = $game.player1.player_name
-    # @player2_name = $game.player2.player_name
-    # @p1_attack = $game.attack($game.player1)
-    # @p1_health = $game.player1.health
     erb(:attack)
   end
 
   get '/attack2' do
-    # @player1_name = $game.player1.player_name
-    # @player2_name = $game.player2.player_name
-    # @p2_attack = $game.attack($game.player2)
-    # @p2_health = $game.player2.health
     erb(:attack)
   end
 

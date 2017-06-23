@@ -13,7 +13,7 @@ feature 'decrease Player 2 hp' do
     sign_in_and_play
     click_button('Attack Dexter')
     click_button('Keep playing')
-    expect(page).to have_content 'Dexter 90/100HP'
+    expect(page).to have_content('Dexter 90/100HP')
   end
 end
 
@@ -22,7 +22,7 @@ feature 'decrease Player 1 hp' do
     sign_in_and_play
     click_button('Attack Lily')
     click_button('Keep playing')
-    expect(page).to have_content('Lily', '90/100HP')
+    expect(page).to have_content('90/100HP')
   end
 end
 
@@ -32,6 +32,6 @@ feature 'lose a game' do
     9.times { attack_player1 }
     click_button('Attack Lily')
     visit('/gameover')
-    expect(page).to have_content 'Game Over!'
+    expect(page).to have_content('Game Over!')
   end
 end

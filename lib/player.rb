@@ -1,3 +1,5 @@
+# lib/player.rb
+
 class Player
   attr_reader :player_name, :health
   MAX_HP = 100

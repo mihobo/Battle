@@ -3,6 +3,6 @@
 feature 'adding names to the game' do
   scenario 'submit names' do
     sign_in_and_play
-    expect(page).to have_content('Lily', 'Dexter')
+    expect(page).to have_content('Dexter')
   end
 end
