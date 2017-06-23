@@ -22,7 +22,7 @@ feature 'decrease Player 1 hp' do
     sign_in_and_play
     click_button('Attack Lily')
     click_button('Keep playing')
-    expect(page).to have_content 'Lily 90/100HP'
+    expect(page).to have_content('Lily', '90/100HP')
   end
 end
 
